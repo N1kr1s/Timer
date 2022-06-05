@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="timer">
+      <div class="controls">
+        <label
+          for="duration"
+          style="font-size: 1rem; color: rgb(119, 6, 119); text-align: center"
+          ><strong style="font-weight: bold">Timer</strong> <br />
+          (Enter a Number)</label
+        >
+        <input id="duration" value="" style="color: rgb(119, 6, 119)" />
+        <div>
+          <button id="start">
+            <i class="fas fa-play" style="color: rgb(119, 6, 119)"></i>
+          </button>
+          <button id="pause">
+            <i class="fas fa-pause" style="color: rgb(119, 6, 119)"></i>
+          </button>
+        </div>
+      </div>
+      <svg class="dial">
+        <!-- r =>is for radius;cx,cy=>coords on x and y axis-->
+        <circle
+          fill="transparent"
+          stroke="blue"
+          stroke-width="9"
+          r="190"
+          cx="0"
+          cy="200"
+          transform="rotate(-90 100 100)"
+        />
+      </svg>
+    </div>
+    <script type="module" src="./build/index.js"></script>
+  </body>
+</html>
